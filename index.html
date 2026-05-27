@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Portofolio Ahmad Bahrudin Ilham, seorang Network Engineer & Infrastructure Specialist. Berpengalaman dalam merancang, mengelola, dan mengamankan arsitektur jaringan tingkat perusahaan.">
+    
     <title>Ahmad Bahrudin Ilham | Network Engineer Portfolio</title>
     <style>
-        /* CSS Variables untuk konsistensi warna dan font */
+        /* PERBAIKAN AKSESIBILITAS: Warna digelapkan untuk rasio kontras yang lulus Lighthouse */
         :root {
             --bg-color: #fcfcfc;
-            --text-main: #2d3748;
-            --text-muted: #718096;
-            --accent: #3182ce;
+            --text-main: #1a202c;  
+            --text-muted: #4a5568; 
+            --accent: #2b6cb0;     
             --border: #e2e8f0;
             --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
@@ -42,7 +45,7 @@
 
         h2 {
             font-size: 1.25rem;
-            font-weight: 400;
+            font-weight: 500; 
             color: var(--text-muted);
             margin-bottom: 3rem;
         }
@@ -60,11 +63,10 @@
             color: var(--text-main);
         }
 
-        /* Styling untuk teks penekanan teknologi */
         em {
             font-style: italic;
             color: var(--text-main);
-            font-weight: 500;
+            font-weight: 600; 
         }
 
         a {
@@ -73,7 +75,6 @@
             transition: all 0.2s ease;
         }
 
-        /* Layout Container per Bagian */
         section {
             margin-bottom: 4rem;
         }
@@ -85,20 +86,21 @@
             gap: 0.75rem;
         }
 
+        /* PERBAIKAN AKSESIBILITAS: Warna teks pada tag dipergelap menjadi #1a202c */
         .skill-tag {
-            background: #edf2f7;
+            background: #e2e8f0; 
             padding: 0.4rem 0.8rem;
             border-radius: 6px;
             font-size: 0.9rem;
-            color: #4a5568;
-            font-weight: 500;
+            color: #1a202c; 
+            font-weight: 600;
             border: 1px solid transparent;
             transition: all 0.2s ease;
         }
         
         .skill-tag:hover {
             border-color: #cbd5e0;
-            background: #e2e8f0;
+            background: #edf2f7;
         }
 
         /* Layout untuk Projects */
@@ -107,7 +109,7 @@
         }
 
         .project-title {
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1.15rem;
             margin-bottom: 0.4rem;
             color: var(--text-main);
@@ -117,6 +119,7 @@
             color: var(--text-muted);
             font-size: 0.95rem;
             line-height: 1.6;
+            font-weight: 500;
         }
 
         /* Footer / Contact */
@@ -130,7 +133,7 @@
 
         footer p {
             color: var(--text-main);
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .contact-links {
@@ -145,7 +148,7 @@
             display: flex;
             align-items: center;
             gap: 0.4rem;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .contact-links a:hover {
@@ -216,7 +219,6 @@
                     Membangun arsitektur jaringan <em>High Availability</em> (HA) dengan sistem <em>failover</em> pada koneksi ISP ganda (Dual WAN). Mengonfigurasi terowongan <em>IPsec VPN</em> yang aman dan terenkripsi untuk memfasilitasi komunikasi data internal antara kantor pusat dan cabang.
                 </div>
             </div>
-            
         </section>
     </main>
 
@@ -224,19 +226,19 @@
         <p>Mari terhubung dan berkolaborasi.</p>
         <div class="contact-links">
             <a href="mailto:email@anda.com">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                 Email
             </a>
-            <a href="https://github.com/username-anda" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <a href="https://github.com/username-anda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 GitHub
             </a>
-            <a href="https://linkedin.com/in/username-anda" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <a href="https://linkedin.com/in/username-anda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 LinkedIn
             </a>
-            <a href="https://myportofoliogw.my.id" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <a href="https://myportofoliogw.my.id" target="_blank" rel="noopener noreferrer" aria-label="Website">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                 Website
             </a>
         </div>
